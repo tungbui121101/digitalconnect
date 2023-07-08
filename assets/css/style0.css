@@ -171,13 +171,13 @@ color: red;
 
 }
 .categories-text {
-
-}
-.categories-text:hover {
     background-color: green;
     color: white;
     border-radius: 30px;
     padding: 4px 8px;
+}
+.categories-text:hover {
+    background-color: rgba(0, 128, 0, 0.5);
 }
 .new-subject {
 margin-top: 66px;
@@ -483,13 +483,13 @@ justify-content: space-between;
 
 }
 .society-text {
-
-}
-.society-text:hover {
     background-color: green;
     color: white;
     border-radius: 30px;
     padding: 4px 8px;
+}
+.society-text:hover {
+    background-color: rgba(0, 128, 0, 0.5);
 }
 .society-seeall {
 
