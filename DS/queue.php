@@ -6,61 +6,60 @@ class CreateQueue {
     public $queue = array();
 
     function __construct() {
-        $this->rear = -1;
-        $this->front = -1;
+        $this->rear = 1; // cuoi
+        $this->front = 1; // dau
     }
 
-    // create a function to check whether
-    // the queue is empty or not
-    public function isEmpty() {
+    // tạo một hàm để kiểm tra xem hàng đợi có rỗng hay không
+    public function isEmpty() {           // kiem tra rong
         if($this->rear == $this->front) {
-            echo "Queue is empty. \n";
+            echo "Hàng đợi trống. \n";
         } else {
-            echo "Queue is not empty. \n";
+            echo "Hàng đợi không trống. \n";
         }
     }
 
-    //create a function to return size of the queue
+    // tạo một hàm để trả về kích thước của hàng đợi
     public function size() {
         return ($this->rear - $this->front);
     }
 
-    //create a function to add new element
+    // tạo một chức năng để thêm phần tử mới
     public function EnQueue($x) {
         $this->queue[++$this->rear] = $x;
-        echo $x." is added into the queue. \n";
+        echo $x." được thêm vào hàng đợi. \n";
     }
 
-    //create a function to delete front element
+    // tạo một chức năng để xóa phần tử phía trước
     public function DeQueue() {
         if($this->rear == $this->front){
-            echo "Queue is empty. \n";
+            echo "Hàng đợi trống. \n";
         } else {
             $x = $this->queue[++$this->front];
-            echo $x." is deleted from the queue. \n";
+            echo $x." bị xóa khỏi hàng đợi. \n";
         }
     }
 
-    //create a function to get front element
+    // tạo một hàm để lấy phần tử phía trước
     public function frontElement() {
         if($this->rear == $this->front) {
-            echo "Queue is empty. \n";
+            echo "Hàng đợi trống. \n";
         } else {
             return $this->queue[$this->front+1];
         }
     }
 
-    //create a function to get rear element
+    // tạo một hàm để lấy phần tử phía sau
     public function rearElement() {
         if($this->rear == $this->front) {
-            echo "Queue is empty. \n";
+            echo "Hàng đợi trống. \n";
         } else {
             return $this->queue[$this->rear];
         }
     }
 }
 
-// test the code
+// in ra kiểm tra mã
 $MyQueue = new CreateQueue();
 $MyQueue->EnQueue(10);
 $MyQueue->EnQueue(20);

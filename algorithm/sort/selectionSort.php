@@ -1,4 +1,7 @@
 <?php
+// sap xep lua chon
+// y tuong: tìm vị trí phần tử nhỏ nhất đổi chỗ nó vs phần tử đầu rồi lờ nó đi
+// tiếp tục như vậy đến khi còn 1 phần tử chính là phần tử lớn nhất
 function selectionSort($mang)
 {
     // Đếm tổng số phần tử của mảng

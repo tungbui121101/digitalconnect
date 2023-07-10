@@ -1,11 +1,11 @@
 <?php
 
-$timeStart = microtime(true);
+// $timeStart = microtime(true);
 
 function linearSearch($arr, $x) {
     for ($i = 0; $i < count($arr); $i++) {
         if($arr[$i] == $x) {
-            echo "vi tri trong mang la ".$i."\n";
+            // echo "vi tri trong mang la ".$i."\n";
             return $i + 1;
         }
     }
@@ -17,20 +17,21 @@ function linearSearch($arr, $x) {
 
 $arr= range(1,1000000);
 
-shuffle($arr);
+shuffle($arr); // xao tron mang array
 $value = 31;
-if (linearSearch($arr,$value)==true){
+if ($position = linearSearch($arr,$value)){
     echo $value. "tim thay\n";
+    echo "tim thay tai vi tri la: " . $position;
 }
 else{
     echo $value. "khong tim thay\n";
 }
 
-$diff = microtime(true) - $timeStart;
-$sec = intval($diff);
-$micro = $diff - $sec;
+// $diff = microtime(true) - $timeStart;
+// $sec = intval($diff);
+// $micro = $diff - $sec;
 
 
 
-echo 'Jobs hoàn thành trong: ' . round($micro * 1000, 4) . ' ms'."\n";
+// echo 'Jobs hoàn thành trong: ' . round($micro * 1000, 4) . ' ms'."\n";
 

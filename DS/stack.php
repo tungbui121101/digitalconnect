@@ -5,28 +5,28 @@ class ReadingList
     protected $limit;
 
     public function __construct($limit = 10) {
-        // initialize the stack
+        // khoi tao mang
         $this->stack = array();
-        // stack can only contain this many items
+        // ngan xep chi co the chua limit
         $this->limit = $limit;
     }
 
-    public function push($item) {
-        // trap for stack overflow
+    public function push($item) {    // them phan tu vao stack
+        // tran ngan xep
         if (count($this->stack) < $this->limit) {
-            // prepend item to the start of the array
+            // them muc vao dau mang
             array_unshift($this->stack, $item);
         } else {
-            throw new RunTimeException('Stack is full!');
+            throw new RunTimeException('Ngan xep da day!');
         }
     }
 
-    public function pop() {
+    public function pop() {         // xoa phan tu khoi stack
         if ($this->isEmpty()) {
-            // trap for stack underflow
-            throw new RunTimeException('Stack is empty!');
+            // tran ngan xep
+            throw new RunTimeException('Ngăn xếp trống!');
         } else {
-            // pop item from the start of the array
+            // pop tu dau mang
             return array_shift($this->stack);
         }
     }
@@ -35,7 +35,7 @@ class ReadingList
         return current($this->stack);
     }
 
-    public function isEmpty() {
+    public function isEmpty() { // kiem tra stack rong
         return empty($this->stack);
     }
 }

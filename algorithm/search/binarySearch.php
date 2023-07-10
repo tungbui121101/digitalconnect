@@ -1,9 +1,9 @@
 <?php
 
-$timeStart = microtime(true);
+// $timeStart = microtime(true);
 
 function binarySearch(Array $arr, $x){
-    if(count($arr)===0) return false;
+    if(count($arr) === 0) return false;
 
     $left = 0;
     $right = count($arr) - 1 ;
@@ -37,11 +37,11 @@ else{
     echo $value. "khong tim thay\n";
 }
 
-$diff = microtime(true) - $timeStart;
-$sec = intval($diff);
-$micro = $diff - $sec;
+// $diff = microtime(true) - $timeStart;
+// $sec = intval($diff);
+// $micro = $diff - $sec;
 
-echo 'Jobs hoàn thành trong: ' . round($micro * 1000, 4) . ' ms';
+// echo 'Jobs hoàn thành trong: ' . round($micro * 1000, 4) . ' ms';
 
 
 

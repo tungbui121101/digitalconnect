@@ -1,4 +1,6 @@
 <?php
+// y tuong: lay 2 phan tu lien nhau trong mang
+//so sanh chung neu truoc lon hon sau thi hoan doi vi tri cua chung den khi sap xep xong
 function bubleSort($mang)
 {
     $sophantu = count($mang);
