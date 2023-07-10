@@ -741,8 +741,8 @@ height: auto;
         position: relative;
     }
     .poster-list-img {
-        width: 336px;
-    height: auto;
+        width: auto;
+    height: 220px;
     aspect-ratio: 336/220;
         
     }
@@ -759,10 +759,14 @@ height: auto;
         font-size: 16px;
         /* text-align: justify; */
         width: calc(100% - 24px);
-        height: auto;
+        height: 220px;
         text-align: left;
         margin-left: 24px;
-        margin-top: 16px;
+        /* margin-top: 16px; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     .poster-desc-titles {
         size: 18px;
@@ -828,7 +832,11 @@ height: auto;
         letter-spacing: 0.005em;
         text-align: left;
         color: rgba(59, 65, 68, 0.5);
-
+        display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; */
         
     }
     /* end poster */
