@@ -1,6 +1,6 @@
 <?php
 // sap xep chen
-// y tuong tu phan tu thu2 so sanh vs ac phan tu phia truoc de dua vao vi tri thich hop
+// y tuong: tu phan tu thu2 so sanh vs cac phan tu phia truoc de dua vao vi tri thich hop
 function insertionSort($mang)  {
     // Tổng số phần tử
     $sophantu = count($mang);
@@ -18,10 +18,10 @@ function insertionSort($mang)  {
         // điều kiện dừng là $loop <= 0 (tức là hết mảng) hoặc
         // phần tử thứ $loop - 1 bé hơn phần tử thứ $i (vì đã tìm đc đúng vị trí)
         // nếu một trong 2 điều kiện đó đúng thì sẽ dừng vòng lặp
-        while($loop > 0 && ($mang[$loop - 1] > $current)) // dun nhau ra de tao khoang trong
+        while($loop > 0 && ($mang[$loop - 1] > $current)) // đùn nhau ra de tao khoang trong
         {
             // Di dời các phần tử lên 1 bậc
-            $mang[$loop] = $mang[$loop - 1]; // lap khoang trong
+            $mang[$loop] = $mang[$loop - 1]; // lấp khoang trong
             $loop -= 1;
         }
 

@@ -1,5 +1,5 @@
 <?php
-
+// y tuong: duyet tung phan tu cua mang den vi tri phan tu can tim thi in ra. khong co thi in ra khong tim thay
 // $timeStart = microtime(true);
 
 function linearSearch($arr, $x) {

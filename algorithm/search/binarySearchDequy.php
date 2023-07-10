@@ -2,8 +2,9 @@
 
 
 // $timeStart = microtime(true);
-// y tuong chia mang lam doi duyet mang neu co phan tu can tim thi in ra man hinh
+// y tuong chia mang lam doi duyet mang neu phan tu o giua in ra, phan tu<mid: phan tu o ben trai in ra giua - 1, phan tu>mid</mid:> phan tu o ben phai giua + 1.
 // neu khong co in ra la phan tu khong co trong mang
+// thuong la mang da duoc sap xep tu be den lon
 // Nội dung đoạn code bạn viết
 
 function binarySearch($arr, $l, $r, $x)

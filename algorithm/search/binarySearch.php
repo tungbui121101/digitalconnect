@@ -1,5 +1,7 @@
 <?php
-
+// y tuong chia mang lam doi duyet mang neu phan tu o giua in ra, phan tu<mid: phan tu o ben trai in ra giua - 1, phan tu>mid</mid:> phan tu o ben phai giua + 1.
+// neu khong co in ra la phan tu khong co trong mang
+// thuong la mang chua duoc sap xep
 // $timeStart = microtime(true);
 
 function binarySearch(Array $arr, $x){
