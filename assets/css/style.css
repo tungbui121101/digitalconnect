@@ -153,17 +153,19 @@ background-color: rgba(255, 0, 0, 0.7);
 .main {
     margin: 100px 0 0 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .slider-img {
-background-image: url('../img/slider/img.png');
-background-repeat: no-repeat;
-background-position: center;
-height: auto;
-aspect-ratio: 1416/390;
-width: 100%;
-background-size: 80% ;
-border-radius: 16px;
-position: relative;
+    background-image: url('../img/slider/img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    aspect-ratio: 1416/390;
+    width: 80%;
+    background-size: cover ;
+    border-radius: 16px;
+    position: relative;
 }
 .slider-text {
 position: absolute;
@@ -194,46 +196,36 @@ text-align: center;
 text-decoration: none;
 list-style: none;
 justify-content: center;
-margin-top: 12px;
+margin-top: 20px;
 }
 .list-cats-item {
     height: 39px;
     width: auto;
-    border-radius: 36px;
-    padding: 6px 36px 6px 36px;
     display: flex;
     align-items: center;
-    margin-left: 4px;
+    margin-right: 4px;
 }
 .list-cats-item:nth-child(5) {
     margin-left: 0;
 }
-.list-cats-item.active {
-    height: 39px;
-    width: auto;
-    border-radius: 36px;
-    padding: 6px 36px 6px 36px;
-    display: flex;
-    align-items: center;
-    background: rgba(0, 120, 130, 1);
-}
-.list-cats-item-link.active {
-    color: white;
-}
-.list-cats-item:hover {
-    background: rgba(0, 120, 130, 1);
-}
 .list-cats-item-link {
-/* margin: 12px 24px; */
-}
-.list-cats-item-link:hover {
-
-    /* color: white; */
-
-}
-.list-cats-item-link .active {
-
-}
+    /* margin: 12px 24px; */
+    padding: 6px 36px 6px 36px;
+    border-radius: 36px;
+    }
+    .list-cats-item .list-cats-item-link.active {
+        background: rgba(0, 120, 130, 1);
+        color: white;
+        padding: 6px 36px 6px 36px;
+    border-radius: 36px;
+    }
+    .list-cats-item-link:hover {
+        background: rgba(0, 120, 130, 1);
+        color: white;
+    }
+    .list-cats-item-link .active {
+    
+    }
 .new {
 
 }
