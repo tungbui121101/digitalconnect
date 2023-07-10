@@ -678,10 +678,12 @@ margin: 0 24px;
 
 }
 .subject-icon {
-    display: grid;
+    /* display: grid; */
+    display: flex;
     margin-top: 12px;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
 }
 .send-email {
@@ -690,7 +692,7 @@ margin: 0 24px;
     width: 105px;
     border-radius: 30px;
     padding: 4px 24px 4px 24px;
-    margin-right: 8px;
+    margin-right: 0;
     justify-content: center
 }
 .email {
@@ -702,7 +704,7 @@ display: none;
     width: 105px;
     border-radius: 30px;
     padding: 4px 24px 4px 24px;
-    margin-right: 8px;
+    margin-right: 0;
     justify-content: center
 }
 .facebook {
