@@ -228,7 +228,7 @@ margin-top: 12px;
 }
 .list-cats-item-link:hover {
 
-    color: white;
+    /* color: white; */
 
 }
 .list-cats-item-link .active {
