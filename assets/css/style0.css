@@ -21,13 +21,14 @@ a {
 #header {
     position: fixed;
     z-index: 10;
-    padding: 35px  22px 16px  ;
+    /* padding: 35px  22px 16px  ; */
     right: 0;
     left: 0;
     top: 0;
     display: flex;
     height: 85px;
     align-items: center;
+    justify-content: center;
     /*box-shadow: 0 0 5px #ccc;*/
 
     background: rgba(255, 255, 255, 0.7);
@@ -174,7 +175,7 @@ color: red;
     background-color: green;
     color: white;
     border-radius: 30px;
-    padding: 4px 8px;
+    padding: 6px 36px;
 }
 .categories-text:hover {
     background-color: rgba(0, 128, 0, 0.5);
@@ -266,6 +267,7 @@ justify-content: space-between;
     align-items: center;
     color: white;
     border-radius: 30px;
+    padding: 16px;
 }
 .email {
     
@@ -295,6 +297,7 @@ justify-content: space-between;
     align-items: center;
     color: white;
     border-radius: 30px;
+    padding: 16px;
 }
 .facebook {
    
@@ -325,7 +328,8 @@ justify-content: space-between;
     border-radius: 30px;
     /* border-style: solid;
     border: 1px; */
-    border: 1px solid rgba(59, 65, 68, 1)
+    border: 1px solid rgba(59, 65, 68, 1);
+    padding: 16px;
 }
 .heart {
     
@@ -357,6 +361,7 @@ margin-top: 72px;
     
 }
 .new-content-text1 {
+    margin-top: 24px;
     height: auto;
     width: 100%;
     font-family: Montserrat;
@@ -486,7 +491,7 @@ justify-content: space-between;
     background-color: green;
     color: white;
     border-radius: 30px;
-    padding: 4px 8px;
+    padding: 6px 36px;
 }
 .society-text:hover {
     background-color: rgba(0, 128, 0, 0.5);
@@ -495,6 +500,10 @@ justify-content: space-between;
 
 }
 .seeall-text {
+cursor: pointer;
+}
+.seeall-text:hover {
+color: rgba(0, 0, 0, 0.5);
 
 }
 .poster {
@@ -617,7 +626,10 @@ margin-bottom: 24px;
 
 }
 .trending-seeall-text {
-
+cursor: pointer;
+}
+.trending-seeall-text:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 .trending-poster {
 
